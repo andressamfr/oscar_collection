@@ -1,5 +1,7 @@
-export class Movie {
-    id: number;
+import { Document } from 'mongoose';
+
+export class Movie extends Document {
+    // id: number;
     titulo: string;
     sinopse: string;
     duracao: number;

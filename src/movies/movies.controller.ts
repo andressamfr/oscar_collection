@@ -12,7 +12,7 @@ export class MoviesController {
     }
 
     @Get(':id')
-    async getById(@Param('id') id: number) : Promise<Movie> {
+    async getById(@Param('id') id: string) : Promise<Movie> {
         return this.movieService.getById(id);
     }
 
@@ -22,13 +22,12 @@ export class MoviesController {
     }
 
     @Put(':id')
-    async update(@Param('id') id: number, @Body() movie: Movie) : Promise<Movie> {
-        movie.id = id;
-        return this.movieService.update(movie);
+    async update(@Param('id') id: string, @Body() movie: Movie) : Promise<Movie> {
+        return this.movieService.update(id, movie);
     }
 
     @Delete(':id')
-    async delete(@Param('id') id: number) {
+    async delete(@Param('id') id: string) {
         this.movieService.delete(id);
     }
 }
