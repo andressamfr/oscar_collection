@@ -6,5 +6,6 @@ export const MovieSchema = new mongoose.Schema({
     duracao: Number,
     ano: Number,
     diretor: String,
-    onde_ver: [String]
+    onde_ver: [String],
+    poster: String
 })

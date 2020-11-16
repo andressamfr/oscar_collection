@@ -4,5 +4,6 @@ export const UserSchema = new mongoose.Schema({
     nome: String,
     sobrenome: String,
     email: String,
-    senha: String
+    senha: String,
+    foto: String
 })

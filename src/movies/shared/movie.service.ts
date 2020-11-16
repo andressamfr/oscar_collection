@@ -26,6 +26,7 @@ export class MovieService {
         return this.getById(id);
     }
 
+
     async delete(id: string) {
         return await this.movieModel.deleteOne({_id: id}).exec();
     }

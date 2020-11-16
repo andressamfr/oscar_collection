@@ -6,4 +6,5 @@ export class User extends Document {
     sobrenome: string;
     email: string;
     senha: string;
+    foto: string;
 }

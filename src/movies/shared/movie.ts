@@ -8,4 +8,5 @@ export class Movie extends Document {
     ano: number;
     diretor: string;
     onde_ver: Array<string>;
+    poster: string;
 }
